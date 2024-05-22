@@ -476,3 +476,8 @@ button.button-tap {
 .mca-table {
   overflow: auto;
 }
+.educations:hover,
+.ski:hover,
+.pro:hover {
+  transform: translateY(-5px);
+}
