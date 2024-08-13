@@ -365,6 +365,9 @@ body.dark .search-field i {
   height: 270px;
   box-shadow: 3px 3px 10px rgb(1 7 24 / 27%);
 }
+.ski h6 {
+  text-align: center;
+}
 
 .pro {
   box-shadow: inset 3px 3px 10px rgb(1 7 24 / 27%);
@@ -412,8 +415,10 @@ button.button-tap:hover {
   justify-content: center;
 }
 
-.program-lang {
-  padding: 0px 25px 0 25px;
+.program-lang,
+.skill-list {
+  display: flex;
+  justify-content: center;
 }
 
 .row-pro {

@@ -10,7 +10,7 @@ const body = document.querySelector("body"),
   skishadow1 = document.querySelector(".ski-shadow1"),
   skishadow2 = document.querySelector(".ski-shadow2"),
   skishadow3 = document.querySelector(".ski-shadow3"),
-  pro = document.querySelector(".pro"),
+  pro = document.querySelectorAll(".pro"),
   Contacts = document.querySelector(".footer");
 
 //scroll down
@@ -39,7 +39,10 @@ modeToggle.addEventListener("click", () => {
   skishadow1.classList.toggle("dark-edu");
   skishadow2.classList.toggle("dark-edu");
   skishadow3.classList.toggle("dark-edu");
-  pro.classList.toggle("dark-edu");
+  pro.forEach((node) => {
+    node.classList.toggle("dark-edu");
+  });
+  //pro.classList.toggle("dark-edu");
   Contacts.classList.toggle("dark-edu");
 
   // js code to keep user selected mode even page refresh or file reopen
@@ -61,7 +64,10 @@ if (getMode == "dark-mode") {
   skishadow1.classList.add("dark-edu");
   skishadow2.classList.add("dark-edu");
   skishadow3.classList.add("dark-edu");
-  pro.classList.add("dark-edu");
+  pro.forEach((node) => {
+    node.classList.add("dark-edu");
+  });
+  //pro.classList.add("dark-edu");
   Contacts.classList.add("dark-edu");
 }
 
