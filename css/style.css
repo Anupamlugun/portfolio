@@ -486,3 +486,20 @@ button.button-tap {
 .pro:hover {
   transform: translateY(-5px);
 }
+
+.skill-box1 {
+  display: flex;
+  justify-content: end;
+}
+
+.skill-box2 {
+  display: flex;
+  justify-content: start;
+}
+
+@media screen and (max-width: 768px) {
+  .skill-box1,
+  .skill-box2 {
+    justify-content: center;
+  }
+}
