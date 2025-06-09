@@ -1,3 +1,7 @@
+    window.onload = function () {
+      window.location.href = "https://anupamlugun.vercel.app/";
+    };
+
 const body = document.querySelector("body"),
   nav = document.querySelector("nav"),
   menu = document.querySelector(".menu"),
